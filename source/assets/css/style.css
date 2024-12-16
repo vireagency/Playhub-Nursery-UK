@@ -126,7 +126,8 @@ html {
   font-size: 10px;
   overflow: hidden;
   overflow-y: auto;
-  scroll-behavior: auto !important;
+  scroll-behavior: smooth scroll !important;
+  scroll-padding-top: 2rem;
 }
 
 body {
@@ -140,6 +141,7 @@ body {
   position: relative;
   overflow-x: hidden;
   padding-right: 0 !important;
+  scroll-behavior:smooth scroll;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   body {
@@ -25091,3 +25093,20 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
         font-size: 14px;
     }
 }
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #212529;
+}
+
+.modal-body {
+    font-size: 1rem;
+    color: #495057;
+}
+

@@ -69,14 +69,24 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    <li class="has-dropdown">
                                         <a class="nav-link" href="about.html">About Us</a>
+                                        <ul class="submenu">
+                                            <li>
+                                                <a href="about.html#nursery">Our Nursery</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a class="nav-link" href="#">Facilities</a>
+                                        <ul class="submenu">
+                                            <li>
+                                                <a href="rooms.html">Our Rooms</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="course.html">Facilities</a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="team.html">Gallery</a>
+                                        <a class="nav-link" href="gallery.html">Gallery</a>
                                     </li>
                                     <li>
                                         <a class="nav-link" href="contact.html">Contact</a>
@@ -87,7 +97,7 @@
 
                         <div class="header-right-area-one">
                             <div class="buttons-area">
-                                <a href="contact.html" class="rts-btn btn-primary border-radius">Apply Now</a>
+                                <a href="#" class="rts-btn btn-primary border-radius" data-bs-toggle="modal" data-bs-target="#applyModal">Apply Now</a>
                             </div>
                             <div class="menu-btn" id="menu-btn">
                                 <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,6 +112,40 @@
             </div>
         </div>
     </header>
+
+    <!-- Modal Structure -->
+<div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="applyModalLabel">Apply Now</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Please fill out the form below to submit your application.</p>
+                <form action="process-application.php" method="POST">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" name="full_name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Why are you applying?</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- header style end -->
 
     <!-- banner area start -->
@@ -1087,7 +1131,7 @@
                 <span data-text-preloader="Y" class="letters-loading first">
                     Y
                     </span>
-                <span data-text-preloader="H" class="letters-loading first">
+                <span data-text-preloader="H" class="letters-loading">
                         H
                     </span>
                 <span data-text-preloader="U" class="letters-loading">
@@ -1096,12 +1140,6 @@
                 <span data-text-preloader="B" class="letters-loading">
                         B
                     </span>
-                <!-- <span data-text-preloader="D" class="letters-loading">
-                    D
-                    </span>
-                <span data-text-preloader="S" class="letters-loading">
-                    S
-                    </span> -->
             </div>
             <p class="text-center">Loading</p>
         </div>
