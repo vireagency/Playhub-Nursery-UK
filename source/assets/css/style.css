@@ -24801,3 +24801,293 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 
 /*Custom*/
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card .icon {
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+}
+
+.card .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card .desc {
+    font-size: 14px;
+    color: white;
+}
+
+/* Card Colors */
+.card-1 {
+    background-color: #FF6F61; 
+}
+
+.card-2 {
+    background-color: #FBB03B;
+}
+
+.card-3 {
+    background-color: #4CAF50;
+}
+
+.card-4 {
+    background-color: #2196F3; 
+}
+
+.card-1:hover {
+    background-color: #FF8C7D;
+}
+
+.card-2:hover {
+    background-color: #FBB94D; 
+}
+
+.card-3:hover {
+    background-color: #66BB6A; 
+}
+
+.card-4:hover {
+    background-color: #42A5F5; 
+}
+
+.offer-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.offer-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+}
+
+.offer-card:hover {
+    transform: translateY(-10px);
+}
+
+.offer-card .icon {
+    margin-bottom: 15px;
+}
+
+.offer-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.offer-card .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.offer-card .desc {
+    font-size: 14px;
+    color: white;
+}
+
+/* Card Colors */
+.offer-card-1 {
+    background-color: #FF6F61; 
+}
+
+.offer-card-2 {
+    background-color: #FBB03B; 
+}
+
+.offer-card-3 {
+    background-color: #4CAF50; 
+}
+
+.offer-card-4 {
+    background-color: #2196F3; 
+}
+
+
+.offer-card-1:hover {
+    background-color: #FF8C7D; 
+}
+
+.offer-card-2:hover {
+    background-color: #FBB94D; 
+}
+
+.offer-card-3:hover {
+    background-color: #66BB6A; 
+}
+
+.offer-card-4:hover {
+    background-color: #42A5F5; 
+}
+
+.excited-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.excited-message {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.section-title2 {
+  padding:5px;
+  margin-top:40px;
+  margin-bottom:0px !important;
+}
+
+.container-area {
+  margin-top: 8rem;
+}
+
+.rts-btn-btn {
+  display: ;
+  padding: 17px 31px;
+  transition: 0.3s;
+  font-weight: 700;
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
+  line-height: 1;
+}
+.rts-btn-btn.btn-primary {
+  background: var(--color-primary) !important;
+  color: var(--color-heading-1);
+  border-width: 2px 4px 4px 2px;
+  border-style: solid;
+  border-color: var(--color-heading-1);
+}
+.rts-btn-btn.btn-primary:hover {
+  background: var(--color-white) !important;
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #f7b42c, #fc575e);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #ffffff40;
+}
+
+.modal-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-close {
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.form-control {
+    border: 1px solid #ffffff40;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.btn-primary {
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e85b4f;
+}
+
+.fees-section {
+    background: #f9f9f9;
+    padding: 50px 0;
+}
+
+.fee-card {
+    background: linear-gradient(135deg, #f7b42c, #fc575e);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.fee-card:hover {
+    transform: translateY(-5px);
+}
+
+.fee-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.fee-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fee-card ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.fee-card ul li ul {
+    padding-left: 20px;
+}
+
+.fee-card ul li ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .fee-card {
+        padding: 15px;
+    }
+
+    .fee-title {
+        font-size: 18px;
+    }
+
+    .fee-card ul li {
+        font-size: 14px;
+    }
+}
