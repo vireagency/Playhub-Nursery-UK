@@ -31,6 +31,57 @@
     <link rel="stylesheet" href="assets/css/vendor/metismenu.css">
     <!-- custom style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        padding-top: 70px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 50%;
+    }
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 10px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        user-select: none;
+    }
+    .next {
+        right: 10px;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev {
+        left: 10px;
+    }
+</style>
+
 </head>
 
 <body>
@@ -215,7 +266,7 @@
     <!-- Bread-Crumb style End -->
 
     <!-- course area start -->
-     <section class="rts-gallery-area rts-section-gap section-bg2">
+     <!-- <section class="rts-gallery-area rts-section-gap section-bg2">
         <div class="container">
             <div class="section-title-area text-center">
                 <p class="pre-title justify-content-center"><img src="assets/images/banner/title-img.svg" alt="">Gallery</p>
@@ -332,9 +383,73 @@
                     </div>
                 </div>
             </div>
+             <div class="see-more text-center mt--30">
+             <a href="#" class="rts-btn-btn btn-primary border-radius">Load More +</a>
+         </div>
         </div>
-    </section>
-    <!-- course area end -->
+    </section> -->
+
+ <section class="rts-gallery-area rts-section-gap section-bg2">
+    <div class="container">
+        <div class="section-title-area text-center">
+            <p class="pre-title justify-content-center">
+                <img src="assets/images/banner/title-img.svg" alt="">Gallery
+            </p>
+        </div>
+        <div class="section-inner">
+            <div class="row g-5 gallery-container">
+                <!-- Images will be dynamically added here -->
+            </div>
+        </div>
+        <div class="see-more text-center mt--30">
+            <button id="load-more-btn" class="rts-btn btn-primary border-radius">Load More +</button>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Modal for Image Preview -->
+<div id="image-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+    <div id="caption"></div>
+    <button class="prev" id="prev-btn">&#10094;</button>
+    <button class="next" id="next-btn">&#10095;</button>
+</div>
+
+
+<section class="rts-gallery-area rts-section-gap section-bg2">
+    <div class="container">
+        <div class="section-title-area text-center">
+            <p class="pre-title justify-content-center">
+                <img src="assets/images/banner/title-img.svg" alt="image"> Latest Video
+            </p>
+        </div>
+        <div class="section-inner">
+            <div class="row g-5 justify-content-center">
+                <!-- Video 1 -->
+                <div class="col-lg-6">
+                    <div class="video-wrapper text-center">
+                        <video controls width="100%" height="348px" style="border-radius: 10px;">
+                            <source src="./assets/images/video/WhatsApp Video 2024-12-18 at 23.52.16 (1).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <!-- Video 2 -->
+                <div class="col-lg-6">
+                    <div class="video-wrapper text-center">
+                        <video controls width="100%" style="border-radius: 10px;">
+                            <source src="./assets/images/video/WhatsApp Video 2024-12-18 at 23.52.16.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- footer call to action area start -->
 
@@ -637,6 +752,137 @@
     <script src="assets/js/plugins/calender.js"></script>
     <!-- main Js -->
     <script src="assets/js/main.js"></script>
+
+ <script>
+    // Array of image URLs
+    const imageUrls = [
+        "https://i.ibb.co/yhh6Ts8/Whats-App-Image-2024-12-18-at-23-52-20-2.jpg",
+        "https://i.ibb.co/6DkV6mr/Whats-App-Image-2024-12-18-at-23-52-18-5.jpg",
+       "https://i.ibb.co/F7CJThZ/Whats-App-Image-2024-12-18-at-23-52-18-4.jpg",
+        "https://i.ibb.co/9TGCFL7/Whats-App-Image-2024-12-18-at-23-52-21-3.jpg",
+        "https://i.ibb.co/SnW8FLS/Whats-App-Image-2024-12-18-at-23-52-22-3.jpg",
+        "https://i.ibb.co/y4QC3Wh/Whats-App-Image-2024-12-18-at-23-52-18-2.jpg",
+        "https://i.ibb.co/0n0XvBB/Whats-App-Image-2024-12-18-at-23-52-16.jpg",
+        "https://i.ibb.co/PcbmBRB/Whats-App-Image-2024-12-18-at-23-52-19-1.jpg",
+        "https://i.ibb.co/dgsXhy8/Whats-App-Image-2024-12-18-at-23-52-20-4.jpg",
+
+        "https://i.ibb.co/kDf4TZ4/Whats-App-Image-2024-12-18-at-23-52-22-1.jpg",
+        "https://i.ibb.co/X23GN6Q/Whats-App-Image-2024-12-18-at-23-52-19-4.jpg",
+        "https://i.ibb.co/YPyDYMb/Whats-App-Image-2024-12-18-at-23-52-17-4.jpg",
+        "https://i.ibb.co/0n0XvBB/Whats-App-Image-2024-12-18-at-23-52-16.jpg",
+        "https://i.ibb.co/6DkV6mr/Whats-App-Image-2024-12-18-at-23-52-18-5.jpg",
+        "https://i.ibb.co/MpWVwLs/Whats-App-Image-2024-12-18-at-23-52-19-5.jpg",
+        "https://i.ibb.co/k0BGYSs/Whats-App-Image-2024-12-18-at-23-52-21-2.jpg",
+        "https://i.ibb.co/9TGCFL7/Whats-App-Image-2024-12-18-at-23-52-21-3.jpg",
+        "https://i.ibb.co/DGqspkF/Whats-App-Image-2024-12-19-at-14-43-12-jpeg88.jpg",
+
+        "https://i.ibb.co/SnW8FLS/Whats-App-Image-2024-12-18-at-23-52-22-3.jpg",
+        "https://i.ibb.co/YkTkkR4/Whats-App-Image-2024-12-19-at-14-43-10-jpeg55.jpg",
+        "https://i.ibb.co/3v1kMhm/Whats-App-Image-2024-12-19-at-14-43-09-jpeg77.jpg",
+        "https://i.ibb.co/qgJhXTT/Whats-App-Image-2024-12-18-at-23-52-17-1.jpg",
+        "https://i.ibb.co/3y4DymF/Whats-App-Image-2024-12-18-at-23-52-18-1.jpg", 
+        "https://i.ibb.co/D9yYVJP/Whats-App-Image-2024-12-18-at-23-52-18-3.jpg",
+        "https://i.ibb.co/YPyDYMb/Whats-App-Image-2024-12-18-at-23-52-17-4.jpg",
+        "https://i.ibb.co/njWVyJp/Whats-App-Image-2024-12-19-at-14-43-11-jpeg66.jpg",
+        "https://i.ibb.co/NZvCPg6/Whats-App-Image-2024-12-18-at-23-52-19-3.jpg"
+    ];
+    
+
+    let currentIndex = 0; // Track the current index of loaded images
+    const imagesPerLoad = 9; // Number of images to load per click
+    const galleryContainer = document.querySelector(".gallery-container");
+    const loadMoreBtn = document.getElementById("load-more-btn");
+    const modal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
+    const closeBtn = document.querySelector(".close");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+
+    let currentModalIndex = 0; // Track the index of the current modal image
+
+    // Function to load images dynamically
+    function loadImages() {
+        for (let i = 0; i < imagesPerLoad; i++) {
+            if (currentIndex >= imageUrls.length) {
+                // Hide button if no more images to load
+                loadMoreBtn.style.display = "none";
+                return;
+            }
+
+            // Create the gallery item structure
+            const colDiv = document.createElement("div");
+            colDiv.classList.add("col-lg-4");
+
+            const wrapperDiv = document.createElement("div");
+            wrapperDiv.classList.add("gallery-wrapper");
+
+            const img = document.createElement("img");
+            img.src = imageUrls[currentIndex];
+            img.alt = "gallery-image";
+
+            const anchor = document.createElement("a");
+            anchor.href = "#";
+            anchor.classList.add("gallery-image");
+            anchor.setAttribute("data-index", currentIndex); // Add data attribute for modal
+
+            const overlayDiv = document.createElement("div");
+            overlayDiv.classList.add("item-overlay");
+
+            const span = document.createElement("span");
+            span.innerHTML = '<i class="fa-light fa-plus"></i>';
+
+            // Append all elements
+            overlayDiv.appendChild(span);
+            anchor.appendChild(overlayDiv);
+            wrapperDiv.appendChild(img);
+            wrapperDiv.appendChild(anchor);
+            colDiv.appendChild(wrapperDiv);
+            galleryContainer.appendChild(colDiv);
+
+            currentIndex++; // Increment the index
+        }
+    }
+
+    // Show modal with image
+    function showModal(index) {
+        currentModalIndex = index;
+        modal.style.display = "block";
+        modalImage.src = imageUrls[currentModalIndex];
+    }
+
+    // Close modal
+    closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    // Navigate to previous image
+    prevBtn.addEventListener("click", () => {
+        currentModalIndex = (currentModalIndex - 1 + imageUrls.length) % imageUrls.length;
+        showModal(currentModalIndex);
+    });
+
+    // Navigate to next image
+    nextBtn.addEventListener("click", () => {
+        currentModalIndex = (currentModalIndex + 1) % imageUrls.length;
+        showModal(currentModalIndex);
+    });
+
+    // Event listener for "Load More" button
+    loadMoreBtn.addEventListener("click", loadImages);
+
+    // Event listener for gallery images
+    galleryContainer.addEventListener("click", (event) => {
+        const target = event.target.closest(".gallery-image");
+        if (target) {
+            const index = parseInt(target.getAttribute("data-index"), 10);
+            showModal(index);
+        }
+    });
+
+    // Initial load
+    loadImages();
+</script>
+
 
 
 </body>

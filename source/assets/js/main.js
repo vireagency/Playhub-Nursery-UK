@@ -905,3 +905,6 @@
         var modal = bootstrap.Modal.getInstance(document.getElementById('bookVisitModal'));
         modal.hide();
     });
+
+
+    
