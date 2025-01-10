@@ -88,6 +88,9 @@
                                     <li>
                                         <a class="nav-link" href="gallery.html">Gallery</a>
                                     </li>
+                                     <!-- <li>
+                                        <a class="nav-link" href="news.html">News</a>
+                                    </li> -->
                                     <li>
                                         <a class="nav-link" href="contact.html">Contact</a>
                                     </li>
@@ -123,7 +126,7 @@
             </div>
             <div class="modal-body">
                 <p>Please fill out the form below to submit your application.</p>
-                <form action="process-application.php" method="POST">
+                <form action="https://usebasin.com/f/cc78f2108e99" method="POST">
                     <div class="mb-3">
                         <label for="fullName" class="form-label">Full Name</label>
                         <input type="text" class="form-control" id="fullName" name="full_name" required>
@@ -179,7 +182,7 @@
                 </div>
                 <div class="col-lg-6 order-change order-lg-2 order-sm-1 order-1">
                     <div class="banner-right-img">
-                        <img src="assets/images/banner/01.png" width="672" alt="banner">
+                        <img src="assets/images/RESIZE/GROUP 1/3.png" width="672" alt="banner">
                     </div>
                 </div>
             </div>
@@ -215,16 +218,19 @@
                                 <p class="pre-title"><img src="assets/images/banner/title-img.svg" alt="">Welcome to Playhub Day Nursery</p>
                                 <h2 class="section-title">Where Little Dreams Take Flight</h2>
                                 <p class="desc">
-                                    We are an OFSTED registered private day care delivering care and education for children aged 0- 11 years. Our mission is to consistently provide excellent and quality educational, emotional and physical needs for all children in our care. The nursery is open all year round excluding the week between Christmas and New Year.
+                         We are an EYFS-based nursery in Abbey Wood, using STEAM principles to help children reach their full potential.
+Playhub is an innovative nursery using a child centred and play based pedagogy to develop the concepts and skills that are important for science, technology, arts, engineering and mathematics (STEAM). We explore practical STEAM activities for our young learners through investigation, manipulation and experimentation to boost thinking and creativity in early childhood education. The STEAM subjects offer many opportunities for children to use their minds and hands to play, explore and learn. 
+
+In todays rapid evolving world where technology plays a vital role in every aspect of our lives, we recognise the significance of STEAM education in preparing children for the future and thus integrate it into our EYFS curriculum from an early age.
                                 </p>
                             </div>
                             <ul class="about-wrapper">
                                 <li class="wrapper-list">
                                     <div class="list-inner">
                                         <div class="icon"><img src="assets/images/icon/01.svg" alt=""></div>
-                                        <div class="content">
-                                            <h4 class="title">Our Mission</h4>
-                                            <p class="desc">At Playhub Nursery our mission is to cultivate <br>
+                                       <div class="content">
+                                            <h4 class="title">Our Ethos</h4>
+                                            <p class="desc">At Playhub Nursery, our ethos is to cultivate <br>
                                                 an environment where curiosity is sparked.</p>
                                         </div>
                                     </div>
@@ -234,8 +240,7 @@
                                         <div class="icon"><img src="assets/images/icon/02.svg" alt=""></div>
                                         <div class="content">
                                             <h4 class="title">Our Commitment</h4>
-                                            <p class="desc">As we embark on the journey of education <br>
-                                                together, we remain committed to providing.</p>
+                                            <p class="desc">At Playhub Nursery, we are committed to creating a warm, nurturing, and inspiring environment where children can flourish.</p>
                                         </div>
                                     </div>
                                 </li>
@@ -245,7 +250,7 @@
                             </div> -->
                             <div class="about-btn-area">
                                 <button type="button" class="rts-btn btn-primary border-radius" data-bs-toggle="modal" data-bs-target="#bookVisitModal">
-                                    Book a Visit
+                                    Make an Enquiry
                                 </button>
                             </div>
                         </div>
@@ -267,11 +272,15 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="bookVisitModalLabel">Book a Visit to Playhub Day Nursery</h5>
+                                <h5 class="modal-title" id="bookVisitModalLabel">Check Out Availability at Playhub Day Nursery</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form id="bookVisitForm" method="POST" action="/">
+                                 <p>
+                                    Even if you're not ready to arrange childcare just yet, it's a good idea to inquire early, as spots often fill up months in advance. 
+                                    Simply provide your details, preferred start date, and the days you need, and our team will get back to you promptly.
+                                </p>
+                                <form id="bookVisitForm" method="POST" action="https://usebasin.com/f/cc78f2108e99">
                                     <div class="mb-3">
                                         <label for="visitorName" class="form-label">Your Full Name</label>
                                         <input type="text" class="form-control" name="visitor_full-name" id="visitorName" placeholder="Enter your full name" required>
@@ -280,13 +289,28 @@
                                         <label for="visitorEmail" class="form-label">Email Address</label>
                                         <input type="email" class="form-control" id="visitorEmail" name="visitor_email" placeholder="Enter your email" required>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="visitDate" class="form-label">Preferred Date</label>
-                                        <input type="date" class="form-control" id="visitDate" name="visitDate" required>
+                                     <div class="mb-3">
+                                        <label for="visitorPhone" class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control" id="visitorPhoneNumber" name="visitor_phonenumber" placeholder="Enter your phone number" required>
+                                    </div>
+                                     <div class="mb-3">
+                                        <label for="visitorEmail" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="visitorEmail" name="visitor_email" placeholder="Enter your email" required>
+                                    </div>
+                                     <div class="mb-3">
+                                        <label for="childAge" class="form-label">Child's Age</label>
+                                        <input type="text" class="form-control" id="childAge" name="child_Age" placeholder="Child's Age" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="visitorMessage" class="form-label">Message</label>
-                                        <textarea class="form-control" id="visitorMessage" rows="3" name="visitorMessage" placeholder="Optional message"></textarea>
+                                        <label for="visitDate" class="form-label">Potential Start Dates  & Days Required</label>
+                                        <input type="text" class="form-control" id="visitorDays" name="visitorDays" placeholder="Enter start dates & days" required>
+                                    </div>
+                                   
+                                     <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" id="termsCheckbox" required>
+                                        <label class="form-check-label" for="termsCheckbox">
+                                            I confirm that I have read and agree to the company's terms and conditions. By sharing my phone number, I consent to receiving messages from the business.
+                                        </label>
                                     </div>
                                     <button type="submit" class="btn btn-primary w-100">Submit</button>
                                 </form>
@@ -294,6 +318,91 @@
                         </div>
                     </div>
                 </div>
+
+ <section class="unique-section rts-section-gap section-bg2">
+    <div class="container">
+        <div class="section-title-area text-center">
+            <h2 class="section-title">What Makes Us Unique</h2>
+            <p class="desc">Discover how we stand out through engaging and innovative learning experiences.</p>
+        </div>
+        <div class="unique-content">
+            <ul class="unique-list">
+                <li>
+                    <strong>Science Exploration:</strong> Fun experiments that ignite curiosity and foster critical thinking skills.
+                </li>
+                <li>
+                    <strong>Technology Engagement:</strong> Age-appropriate tools and resources to introduce digital literacy.
+                </li>
+                <li>
+                    <strong>Engineering Challenges:</strong> Building projects that inspire problem-solving and teamwork.
+                </li>
+                <li>
+                    <strong>Artistic Expression:</strong> Creative art sessions to encourage imagination and emotional expression.
+                </li>
+                <li>
+                    <strong>Mathematical Discovery:</strong> Games and activities that make learning numbers and patterns exciting.
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="steam-activities-area rts-section-gap">
+    <div class="container">
+        <div class="section-title-area text-center">
+            <!-- <h2 class="title">STEAM Activities</h2> -->
+            <p class="desc">
+                At Playhub Nursery, we embrace STEAM (Science, Technology, Engineering, Arts, and Mathematics) activities to inspire young minds through hands-on learning and exploration.
+            </p>
+        </div>
+        <div class="section-inner">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="activity-item">
+                        <img src="assets/images/RESIZE/science.jpg" alt="Science Experiment" class="img-fluid">
+                        <div class="overlay">
+                            <h4 class="activity-title">Science Experiments</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="activity-item">
+                        <img src="assets/images/RESIZE/tech.jpg" alt="Technology Play" class="img-fluid">
+                        <div class="overlay">
+                            <h4 class="activity-title">Technology Exploration</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="activity-item">
+                        <img src="assets/images/RESIZE/engineering.jpg" alt="Engineering Blocks" class="img-fluid">
+                        <div class="overlay">
+                            <h4 class="activity-title">Engineering with Blocks</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="activity-item">
+                        <img src="assets/images/RESIZE/arts.jpg" alt="Art and Creativity" class="img-fluid">
+                        <div class="overlay">
+                            <h4 class="activity-title">Art and Creativity</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="activity-item">
+                        <img src="assets/images/RESIZE/maths.jpg" alt="Math Games" class="img-fluid">
+                        <div class="overlay">
+                            <h4 class="activity-title">Math Games</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
     <section class="rts-class-area">
        <div class="container">
@@ -361,8 +470,8 @@
     <section class="rts-class-area">
         <div class="container">
             <div class="section-title-area container-area text-center">
-                <p class="pre-title justify-content-center"><img src="assets/images/banner/title-img.svg" alt="">Classes</p>
-                <h2 class="section-title">Find Classes For Every Age</h2>
+                <!-- <p class="pre-title justify-content-center"><img src="assets/images/banner/title-img.svg" alt="">Classes</p> -->
+               <h2 class="section-title">Our Childcare Rooms</h2>
                 <p class="desc"> 
                 Our programs are designed to support growth, spark curiosity, and inspire learning at every stage of your child’s development.</p>
             </div>
@@ -375,10 +484,10 @@
                                     <img src="assets/images/icon/03.svg" alt="">
                                 </div>
                                 <a href="program-details.html">
-                                    <h4 class="title">Toddler</h4>
+                                    <h4 class="title">Babies</h4>
                                 </a>
-                                <p class="period">( 1 - 3 years)</p>
-                                <p class="desc">A toddler is a child typically between the ages of 1 and 3 years old.</p>
+                                <p class="period">( 0 - 2 years)</p>
+                                <p class="desc">Our baby program nurtures infants in a calm, loving environment designed to support early development, sensory exploration, and secure attachment.</p>
                                 <div class="shape-icon"><img src="assets/images/banner/blink.svg" alt=""></div>
                             </div>
                         </div>
@@ -390,10 +499,10 @@
                                     <img src="assets/images/icon/04.svg" alt="">
                                 </div>
                                 <a href="program-details.html">
-                                    <h4 class="title">Preschool</h4>
+                                    <h4 class="title">Toddlers</h4>
                                 </a>
                                 <p class="period">( 2 - 3 years)</p>
-                                <p class="desc">A toddler is a child typically between the ages of 1 and 3 years old.</p>
+                                <p class="desc">Toddlers are encouraged to explore, learn, and grow through interactive play and activities that foster independence and curiosity. <br> <br></p>
                                 <div class="shape-icon"><img src="assets/images/banner/blink.svg" alt=""></div>
                             </div>
                         </div>
@@ -405,10 +514,10 @@
                                     <img src="assets/images/icon/05.svg" alt="">
                                 </div>
                                 <a href="program-details.html">
-                                    <h4 class="title">Kindergarden</h4>
+                                    <h4 class="title">Pre-School</h4>
                                 </a>
-                                <p class="period">( 3 - 4 years)</p>
-                                <p class="desc">A toddler is a child typically between the ages of 1 and 3 years old.</p>
+                                <p class="period">( 3 - 5 years)</p>
+                                <p class="desc">Our preschool program prepares children for school readiness by focusing on foundational skills, creativity, and social-emotional development in a fun, engaging setting.</p>
                                 <div class="shape-icon"><img src="assets/images/banner/blink.svg" alt=""></div>
                             </div>
                         </div>
@@ -420,10 +529,11 @@
                                     <img src="assets/images/icon/06.svg" alt="">
                                 </div>
                                 <a href="program-details.html">
-                                    <h4 class="title">Pre-K Program</h4>
+                                    <h4 class="title">After School</h4>
                                 </a>
-                                <p class="period">( 5 - 6 years)</p>
-                                <p class="desc">A toddler is a child typically between the ages of 1 and 3 years old.</p>
+                                <p class="period">( 5 - 11 years)</p>
+                                
+                                <p class="desc">The after-school program provides a safe, supportive space for children to unwind, complete homework, and participate in enriching activities that promote personal growth.</p>
                                 <div class="shape-icon"><img src="assets/images/banner/blink.svg" alt=""></div>
                             </div>
                         </div>
@@ -437,7 +547,7 @@
      <div class="rts-course-default-area rts-section-gap rts-shape-move">
         <div class="container">
             <div class="section-title-area text-center">
-                <h2 class="section-title">Our Childcare Rooms</h2>
+                <!-- <h2 class="section-title">Our Childcare Rooms</h2> -->
                 <p class="pre-title" style="font-weight: 500; text-align: justify;">
                     Babies and toddlers are divided by age and mobility and will always be with children of a similar developmental stage. Our skilled practitioners fully understand the varying needs of children and the changing requirements as children develop between the ages of 3 months and preschool age.
                 </p>
@@ -677,14 +787,14 @@
 <!-- gallery area end -->
 
     <!-- event area start -->
-    <section class="fees-section rts-section-gap">
+    <!-- <section class="fees-section rts-section-gap">
     <div class="container">
         <div class="section-title-area text-center">
             <h2 class="section-title">Our Fees</h2>
             <p class="desc">Explore our affordable childcare plans designed to meet your needs.</p>
         </div>
         <div class="row g-4">
-            <!-- Fee Cards -->
+           
             <div class="col-lg-4 col-md-6">
                 <div class="fee-card">
                     <h4 class="fee-title">Childcare</h4>
@@ -728,83 +838,28 @@
             </div>
         </div>
     </div>
-</section>
-
-    <section class="rts-event-area rts-section-gapTop">
-        <div class="container">            
-            <div class="brand-area">
-                <div class="slider-inner">
-                    <div class="swiper mySwiper-category-1 swiper-data" data-swiper='{
-                                "spaceBetween":30,
-                                "slidesPerView":3,
-                                "loop": true,
-                                "speed": 1500,
-                                "autoplay":{
-                                    "delay":"4000"
-                                },
-                                "breakpoints":{
-                                "0":{
-                                    "slidesPerView":2,
-                                    "spaceBetween":30},
-                                "320":{
-                                    "slidesPerView":2,
-                                    "spaceBetween":30},
-                                "480":{
-                                    "slidesPerView":3,
-                                    "spaceBetween":30},
-                                "640":{
-                                    "slidesPerView":5,
-                                    "spaceBetween":30},
-                                "840":{
-                                    "slidesPerView":7,
-                                    "spaceBetween":30},
-                                "1140":{
-                                    "slidesPerView":7,
-                                    "spaceBetween":30}
-                                }
-                            }'>
-                        <div class="swiper-wrapper">
-                            <!-- single swiper style -->
-                            <div class="swiper-slide">
-                                <div class="image"><a href="#"><img src="assets/images/brand/client2.jpg" alt="image"></a></div>
-                            </div>
-                            <!-- single swiper style -->
-                            <!-- single swiper style -->
-                            <div class="swiper-slide">
-                                <div class="image"><a href="#"><img src="assets/images/brand/client2.jpg" alt="image"></a></div>
-                            </div>
-                            <!-- single swiper style -->
-                            <!-- single swiper style -->
-                            <div class="swiper-slide">
-                                <div class="image"><a href="#"><img src="assets/images/brand/client2.jpg" alt="image"></a></div>
-                            </div>
-                            <!-- single swiper style -->
-                            <!-- single swiper style -->
-                            <div class="swiper-slide">
-                                <div class="image"><a href="#"><img src="assets/images/brand/client2.jpg" alt="image"></a></div>
-                            </div>
-                            <!-- single swiper style -->
-                            <!-- single swiper style -->
-                            <div class="swiper-slide">
-                                <div class="image"><a href="#"><img src="assets/images/brand/client2.jpg" alt="image"></a></div>
-                            </div>
-                            <!-- single swiper style -->
-                            <!-- single swiper style -->
-                            <div class="swiper-slide">
-                                <div class="image"><a href="#"><img src="assets/images/brand/client2.jpg" alt="image"></a></div>
-                            </div>
-                            <!-- single swiper style -->
-                            <!-- single swiper style -->
-                            <div class="swiper-slide">
-                                <div class="image"><a href="#"><img src="assets/images/brand/client2.jpg" alt="image"></a></div>
-                            </div>
-                            <!-- single swiper style -->
-                        </div>
-                    </div>
+</section> -->
+<section class="rts-event-area rts-section-gapTop">
+    <div class="container">
+        <div class="brand-area">
+            <div class="brand-logos">
+                <!-- Single logo -->
+                <div class="logo-item">
+                    <a href="https://www.gov.uk/government/organisations/ofsted/about">
+                        <img src="assets/images/brand/client2.jpg" alt="Client Logo" class="img-fluid">
+                    </a>
+                </div>
+                <!-- Single logo -->
+                <div class="logo-item">
+                    <a href="https://www.childcare.co.uk/">
+                        <img src="assets/images/RESIZE/GROUP 3/logo.png" alt="Client Logo" class="img-fluid" id="group-2">
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     <!-- event area end -->
 
     <!-- testimonials area start -->
@@ -879,7 +934,7 @@
                         </div>
                         <!-- single swiper style -->
                          <!-- single swiper style -->
-                        <div class="swiper-slide">
+                        <!-- <div class="swiper-slide">
                             <div class="testimonials-wrapper">
                                 <div class="wrapper-inner">
                                     <div class="content">
@@ -902,7 +957,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                          <!-- single swiper style -->
                         <div class="swiper-slide">
                             <div class="testimonials-wrapper">
@@ -982,7 +1037,7 @@
     <div class="rts-footer-area section-bg">
         <div class="container">
             <div class="footer-top">
-                <form action="#" method="POST">
+                <form action="https://usebasin.com/f/cc78f2108e99" method="POST">
                     <h3 class="form-title">We'd Love to Hear Your Feedback</h3>
                     <div class="form-inner">
                         <input type="text" name="Review" placeholder="Leave Us A Review or Testimonial" required>
@@ -1016,7 +1071,7 @@
                             <div class="body">
                                 <ul class="menu">
                                     <li><a href="about.html">About Us</a></li>
-                                    <li><a href="facilities.html">Our Facilities</a></li>
+                                    <li><a href="rooms.html">Our Facilities</a></li>
                                     <li><a href="nursery.html">Nursery</a></li>
                                     <li><a href="gallery.html">Gallery</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
@@ -1031,10 +1086,10 @@
                             </div>
                             <div class="body">
                                 <ul class="menu">
-                                    <li><a href="course.html">Childcare costs</a></li>
-                                    <li><a href="blog.html">Services</a></li>
-                                    <li><a href="program-details.html">Book a Visit</a></li>
-                                    <li><a href="contact.html">Careers</a></li>
+                                    <li><a href="rooms.html">Our Rooms</a></li>
+                                    <li><a href="contact.html">Apply</a></li>
+                                    <li><a href="contact.html">Book a Visit</a></li>
+                                    <!-- <li><a href="contact.html">Testimonials</a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -1046,9 +1101,9 @@
                             </div>
                             <div class="body">
                                <ul class="wrapper-list">
-                                    <li><i class="fa-regular fa-location-dot"></i>34-36 Grovebury Road, Abbey Wood, SE2 9BB, London, UK</li>
-                                    <li><i class="fa-regular fa-phone"></i><a href="tel:+4733378901">+(61) 485-826-710</a></li>
-                                    <li><i class="fa-regular fa-envelope"></i><a href="mailto: Playhubchildcare@gmail.com">Playhubchildcare@gmail.com</a></li>
+                                    <li><i class="fa-regular fa-location-dot"></i>34-36 Grovebury Road, Abbey Wood, SE2 9BB, United Kingdom</li>
+                                    <li><i class="fa-regular fa-phone"></i><a href="tel:O20 8933 2593">O20 8933 2593</a></li>
+                                    <li><i class="fa-regular fa-envelope"></i><a href="mailto: info@playhubnursery.co.uk">info@playhubnursery.co.uk</a></li>
                                     <li><i class="fa-regular fa-clock"></i>Monday - Friday 08:00 - 18:00</li>
                                 </ul>
                             </div>

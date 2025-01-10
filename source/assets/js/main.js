@@ -896,15 +896,15 @@
 
 
 //Modal
-  document.getElementById("bookVisitForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-        alert("Thank you for booking a visit! We’ll contact you soon.");
-        // Reset the form
-        this.reset();
-        // Close the modal
-        var modal = bootstrap.Modal.getInstance(document.getElementById('bookVisitModal'));
-        modal.hide();
-    });
+  // document.getElementById("bookVisitForm").addEventListener("submit", function (e) {
+  //       e.preventDefault();
+  //       alert("Thank you for booking a visit! We’ll contact you soon.");
+  //       // Reset the form
+  //       this.reset();
+  //       // Close the modal
+  //       var modal = bootstrap.Modal.getInstance(document.getElementById('bookVisitModal'));
+  //       modal.hide();
+  //   });
 
 
     
