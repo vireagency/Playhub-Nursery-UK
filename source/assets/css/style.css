@@ -25230,3 +25230,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   width: 25rem;
 }
 
+.about-image img, .about-image2 img{
+  border-radius: 2rem;
+}
+
